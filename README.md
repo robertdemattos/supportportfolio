@@ -8,6 +8,9 @@ Hello.  My name is Robert de Mattos and this is my support portfolio.  This will
 -- Ticket Documentation
 -- Technical Scenarios
 -- Customer Scenarios
+-- Escalation Tiers
+-- Support Team Leadership
+-- "Fixing The Customer"
 -- Wild Technical Stories
 -- Knowledge Base Examples
 -- AI Uses in Support
@@ -18,4 +21,4 @@ Hello.  My name is Robert de Mattos and this is my support portfolio.  This will
 
 Based in Mars Hill, NC. Available for remote roles in software support, customer success, and technical/customer support leadership.
 
-Contact: robertdemattos@yahoo.com | linkedin.com/in/robert-de-mattos-16b8ab5
+Contact: robertdemattos@yahoo.com | 704-635-9655 | linkedin.com/in/robert-de-mattos-16b8ab5
