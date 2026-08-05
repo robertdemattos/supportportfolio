@@ -5,15 +5,15 @@ Hello.  My name is Robert de Mattos and this is my support portfolio.  This will
 
 ## What You'll Find Here
 
--- Ticket Documentation
--- Technical Scenarios
--- Customer Scenarios
--- Escalation Tiers
--- Support Team Leadership
--- "Fixing The Customer"
--- Wild Technical Stories
--- Knowledge Base Examples
--- AI Uses in Support
+- Ticket Documentation
+- Technical Scenarios
+- Customer Scenarios
+- Escalation Tiers
+- Support Team Leadership
+- "Fixing The Customer"
+- Wild Technical Stories
+- Knowledge Base Examples
+- AI Uses in Support
 
 ---
 
