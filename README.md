@@ -1,2 +1,21 @@
 # supportportfolio
-Technical Support, Customer Support and Support Leadership. Technical issues, customer issues, team mentoring, knowledge bases examples I've seen or written in past roles.
+
+Hello.  My name is Robert de Mattos and this is my support portfolio.  This will show how I troubleshoot and document issues as well as situations I've run into as a support team lead.  It will also contain best practices on how to "fix the customer" during and after the resolution of an issue and show you how I would use AI in a current support role.
+
+
+## What You'll Find Here
+
+-- Ticket Documentation
+-- Technical Scenarios
+-- Customer Scenarios
+-- Wild Technical Stories
+-- Knowledge Base Examples
+-- AI Uses in Support
+
+---
+
+### About Me
+
+Based in Mars Hill, NC. Available for remote roles in software support, customer success, and technical/customer support leadership.
+
+Contact: robertdemattos@yahoo.com | linkedin.com/in/robert-de-mattos-16b8ab5
