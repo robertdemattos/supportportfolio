@@ -1,6 +1,6 @@
 **Using AI In First Respose**
 
-AI can be useful in buying valuable time for support agents to focus on more complex issues.  For example, customers have login issues.  This is one of the most common problems customers call in about.  What if you could use an AI to help
+AI can be useful in buying valuable time for support agents to focus on more complex issues.  For example, customers have login issues.  This is one of the most common problems customers call in about.  What if you could use an AI to help?
 
 **Bot with AI**
 
