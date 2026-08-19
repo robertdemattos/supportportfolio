@@ -1,15 +1,39 @@
-**Using AI In First Respose**
+# Using AI in First Response
 
-AI can be useful in buying valuable time for support agents to focus on more complex issues.  For example, customers have login issues.  This is one of the most common problems customers call in about.  What if you could use an AI to help?
+AI is most effective in customer support when it handles the predictable so that humans can focus on the complex. One of the most common examples is the login issue. Nearly every support team deals with them daily. Here is what AI assisted first response can look like in practice.
 
-**Bot with AI**
+---
 
-The bot could be designed with flows where the AI directs the customers issue to the closest flow.  Lets go to our login issue.  A customer uses the bot to say, "I can't log into my account this morning for some reason."  For now we're going to assume that there aren't any application issues preventing clients from logging in.  Built in flow choices could be, "locked out of account", "unable to log in", "password not working".  The AI know's it's one of these three options and so it may ask the customer to explain what the message on the interface is showing.  In this case the customer says, "it tells me my password is invalid."  So the AI grabs the "password not working" flow.  Built into the flow already are things to check like character lengths, the use of upper case and lower case letters, maybe a number being required in the password that the customer had already set.  So the AI grabs the info from the flow and asks questions like, "the login requirement for a password is that you have a number, an upper case character or a special character.  Are you forgetting any of these?"  If the customer says they are the AI might suggest they reset the password so they can write down what they created.  If the customer says they aren't forgetting, the AI may suggest a reset of the password anyways with the requirements that the password has to have.  But...what if the customer is still having trouble or the customer wants to speak to a human?  Built into the flows is a trigger to either create a ticket for the agent to get back to the customer or for the customer to be queued into a chat with a live agent.  The AI knows to go directly to that part of the flow to fire that trigger.  
+## Bot with AI
 
-**Article with AI**
+A bot can be designed with predefined flows where AI directs the customer's issue to the closest match. Take this example. A customer contacts support and says "I can't log into my account this morning for some reason."
 
-At a company I worked with, we had Zendesk with limited AI.  A messaging bot where, if the correct tag were put into the configuration, the AI could suggest articles that would help.  So, the customer says the same thing.  "I can't log into my account this morning for some reason."  The tags to pull the articles in this case are tied to the articles.  So whether the article is "Resetting Your Password" or "Problems logging in, the AI tag is "log in" in some variation.  "Login", "Logging In", "Log in", "Log into".  By frequency of how the customer reports the issue, the AI learns what articles customers access the most based on what they report.
+The AI recognizes this as a login related issue and presents options such as locked out of account, unable to log in, or password not working. The customer explains that the interface is telling them their password is invalid. The AI selects the password not working flow and begins asking targeted questions based on built in requirements — does the password contain a number, an uppercase character, or a special character?
 
-**Emotional Replies**
+If the customer realizes they missed a requirement the AI walks them through a reset. If the issue persists or the customer simply wants a human the AI fires a built in trigger to either create a ticket for agent follow up or queue the customer into a live chat. The AI knows exactly when to get out of the way.
 
-Human beings will always be better able to sympathize but a good AI can also reply to a human like Chat GPT or Claude does.  With some empathy.  When the customer is frustrated, the AI can pick that up and apologize to the customer for the inconvenience prior to a human working with them.  In the case that the AI helps the customer solve the issue, it may include in a report what the customers tone was.  Granted, a customers tone could be more angry BECAUSE an AI is helping them first.  If the AI puts out a survey at the end of the experience, it could ask the question point blank about the customers frustration because of interfacing with an AI.  This could provide feedback to either increase the use of it or scale it back.
+---
+
+## Article Suggestion with AI
+
+At a previous employer we used Zendesk with a messaging bot configured to suggest knowledge base articles based on tags. When a customer reported a login issue the AI pulled articles tagged with variations of the phrase — login, log in, logging in — and surfaced the most relevant ones automatically.
+
+Over time the AI learned which articles customers accessed most frequently based on how they described their issues. The result was a self service layer that improved with every interaction.
+
+---
+
+## Handling Customer Emotion
+
+A good AI can detect frustration and respond with empathy before a human ever enters the conversation. An apology for the inconvenience, a calm tone, and a clear path forward can de-escalate a customer who might otherwise arrive at a live agent already agitated.
+
+That said some customers become more frustrated specifically because they are talking to an AI. A well designed system accounts for this by including a post interaction survey that asks directly about the customer's experience with the AI. That feedback loop is critical. It tells the organization whether to expand AI first response, scale it back, or refine it for specific issue types.
+
+---
+
+## The Bottom Line
+
+AI in first response works best as a filter not a replacement. It handles the predictable, learns from patterns, and knows when to escalate. The human agent's job becomes more focused and more impactful as a result.
+
+---
+
+*Robert de Mattos | robertdemattos@yahoo.com | linkedin.com/in/robert-de-mattos-16b8ab5*
