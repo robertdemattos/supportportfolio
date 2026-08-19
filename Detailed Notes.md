@@ -1,18 +1,68 @@
-**Writing Detailed Notes**
+# Writing Detailed Notes
 
+As a Support Specialist I used Zendesk for both customer communication and issue documentation. Zendesk is excellent for detailed note taking but its value is only as good as what you put into it. If you are new to support this is one of the most important habits you can build early. Detailed notes help you understand an issue from start to finish and they give whoever you escalate to a clear picture of what you have already done and why.
 
-As a Support Specialist I used Zendesk for communication with the customer and documentation of the issue.  Zendesk is great for detailed note taking.  It needs to be understood, especially if you're new to support, that detailed notes are key to helping you understand the issue you ran into from start to finish.  It also helps the person you're going to escalate an issue to.  There are two kinds of notes in Zendesk.  External and internal.  External can be seen by the customer.  Internal cannot.  Internal (generally a shade of tan on the note screen) is where you want to put the details of your investigation.
+Zendesk has two types of notes — external and internal. External notes can be seen by the customer. Internal notes cannot. Internal notes are typically displayed in a shade of tan on the note screen. Your investigation details belong there.
 
-**What Your Notes Should Have**
+---
 
-Consider this to be something like an interview.  We know that in an interview with hiring managers, they are looking for STAR.  This stands for Situation, Task, Action and Result.
-  - **Situation:** You're only going to write this out once.  In your notes, there is no need to keep repeating the situation.  Generally, the situation is written during or after your conversation with the end user.  From this, you or someone else reading your notes has context. (Example: Customer states that report window is too small in web application).
-  - **Task:** Some support specialists like to put in their notes what they might start with because it helps them to build the root paths they'll take and it also helps the person they may escalate to in seeing clearly what their initial plan of action was going to be.  (Example: Customer showed what it looked like in initial interaction so I will get a session back with them to try other browsers and see what the report looks like there.  If it looks the same, will restart reporting services).
-  - **Action:** The action is where your most detailed notes should go.  Step by step you need to list what you did.  If you see anything odd, make sure to add screenshots.
-    (Example: 1. Got remote session to customer environment. 2. Installed Firefox and then went to customer URL and viewed their reports and it looks like this (show screenshot).  3. Then went back to browser customer was using and access their reports and it looks like this (show screenshot). 4. Because the two browsers show the same result of window being too small, went to reporting services on server and restarted reporting services. 5. After checking customers reports on browser they normally use, issue appears to be resolved (show screenshot).)
-  - **Result:** You already provided it in the action but those are in steps.  In a result you can summarize what you did to fix the issue.  If the action shows the steps, the result shows the summary.  You're telling a story about what you did.  Let's say you're at the end of your ticket.  You've communicated with the customer and they are satisfied with the work you did and they are back up and running.  No further action needs to be taken.  You're at a point of ticket closure.  This is when you write your summary. (Example: Customer had reported an issue with with web application with the viewing window being too small making reports very hard to read. Comparison with another browser showed the same result. After a restart of the customers reporting services, the viewing window in the customers original browser and subsequently in the alternative browser loaded, starting showing the reports in a normal window size. Verified in verbal communication with the customer that we resolved their issue and asked them if we could help them with anything else. They said they were good to go.  Closing ticket.)
+## What Your Notes Should Have
 
-**Other Key Info For Your Notes**
+Think of your ticket notes the way you would think about a STAR interview response. STAR stands for Situation, Task, Action, and Result. Applied to ticket documentation it looks like this.
 
-Every company has their Zendesk set up differently.  Zendesk can be configured to use drop downs to record the application being used as well as the software version and if the issue is common enough, there can also be a category for that.  While that is easy enough for a support specialist to understand, those things should be listed somewhere in the notes so that it's easy to locate by the person you may be escalating to.  In the case that it has to go to an engineer, they may not be on the same ticketing system a support agent uses and it's so much easier to copy and paste notes with everything in one spot.
--Example: You can list these somewhere in a stack: Application Name, Application Version, Application Module, part of module affected.
+---
+
+### Situation
+
+You only need to write the situation once. There is no reason to keep repeating it throughout the ticket. The situation is typically written during or shortly after your initial conversation with the customer. It gives you and anyone else reading the ticket the context they need to understand what the customer is dealing with.
+
+> *Example: Customer states that the report window is too small in the web application.*
+
+---
+
+### Task
+
+Some support specialists like to note their initial plan of attack before they start investigating. This is optional but it has two benefits. It helps you map out your approach and it shows whoever you escalate to what your starting point was and why.
+
+> *Example: Customer showed me what it looked like during our initial interaction. I will get a remote session back with them to test other browsers and see if the report looks the same there. If it does, I will restart reporting services.*
+
+---
+
+### Action
+
+This is where your most detailed notes go. Document every step you took in order. If you see anything unusual include a screenshot. Do not summarize here — that comes later. The action section is your step by step account of everything you did.
+
+> *Example:*
+> *1. Got remote session to customer environment.*
+> *2. Installed Firefox, navigated to customer URL, and viewed their reports. Window appears too small. (Screenshot)*
+> *3. Went back to the browser the customer normally uses and accessed their reports. Same result. (Screenshot)*
+> *4. Because both browsers showed the same result, navigated to reporting services on the server and restarted reporting services.*
+> *5. After restart, checked customer reports in their normal browser. Issue appears resolved. (Screenshot)*
+
+---
+
+### Result
+
+The action section already captured the steps. The result is where you tell the story of what happened. Think of it as the summary at the end — written once the customer is satisfied, the issue is resolved, and you are ready to close the ticket.
+
+> *Example: Customer reported that the report viewing window in the web application was too small, making reports difficult to read. Testing in an alternate browser showed the same result, ruling out a browser specific issue. After restarting reporting services on the customer's server the viewing window loaded at the correct size in both browsers. Verified verbally with the customer that the issue was resolved and asked if there was anything else we could help with. They confirmed they were good to go. Closing ticket.*
+
+---
+
+## Other Key Information for Your Notes
+
+Every company configures Zendesk differently. Many use dropdown fields to capture things like the application name, software version, and issue category. Those dropdowns are useful but they are not enough on their own. If the issue needs to escalate to an engineer who may not be on the same ticketing system, having everything documented in the notes themselves makes it easy to copy and paste without anything getting lost.
+
+At the top of your internal notes or in a clearly visible spot list the key details in a simple stack so they are easy to find at a glance.
+
+> *Example:*
+> *Application Name:*
+> *Application Version:*
+> *Application Module:*
+> *Part of Module Affected:*
+
+It takes thirty seconds to add and it saves the next person significant time.
+
+---
+
+*Robert de Mattos | robertdemattos@yahoo.com | linkedin.com/in/robert-de-mattos-16b8ab5*
