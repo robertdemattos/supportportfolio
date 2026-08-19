@@ -1,57 +1,85 @@
-**Communicating With The Customer in a Ticket**
+# Communicating With The Customer in a Ticket
 
+Customer communication is the backbone of support whether you are working by phone, email, chat, or video. Ticketing systems like Zendesk typically cover the first three. Video can be handled through Slack or Microsoft Teams depending on what the company or the customer prefers. This document covers how to communicate with a customer at each stage of a ticket and how to document that communication internally so that anyone who reads the ticket can immediately see what the latest action was without having to dig through pages of notes.
 
-Customer communication is key whether you use phone, email, chat or video.  Ticketing systems such as Zendesk usually cover the first three.  Video can be Slack or Microsoft Teams depending on what the company or the customer prefers to use.  This document will show how to communicate with a customer in a ticket and also how to document internally what the communication was about so that no matter who reads the ticket, the latest action can be seen clearly and not buried in the notes.
+---
 
-**The Customer Reports an Issue**
+## The Customer Reports an Issue
 
-Generally these days, ticketing systems will let the customer know that their issue has been received by support, but that is automated and it's the same message.  If your customer uses your product a lot, it is likely they put in tickets on a frequent basis.  If all they saw was that generic message, they might get a little upset.  It is our responsibility as support agents and specialists to let the customer know that there is an actual PERSON ready to help them with a question or issue they are having.  Lets see how we would communicate with a customer when they engage us in different forms of communication.
+Most ticketing systems today will automatically notify the customer that their issue has been received. That automated message is fine but it is the same message every customer gets every time. If your customer uses your product regularly they are likely putting in tickets on a fairly frequent basis. Seeing that same generic response over and over can start to feel impersonal. It is our responsibility as support agents and specialists to make sure the customer knows there is an actual human being on the other end who is aware of their issue and ready to help. Here is how that looks across each communication channel.
 
-**Email**
+---
 
-This may be the most common form of communication for how a customer reports an issue.  John from (company) writes:
+## Email
 
-"Hi. For some reason when I logged on this morning, only half of my client options showed up when I was in (application).  This is no good because I have a deadline to input updated transaction details into their profiles by tomorrow afternoon.  I need help ASAP please."
+Email is likely the most common way customers report issues. John from (company) writes in:
 
-We know they've already gotten the automated message but they haven't heard from us yet.  Ideally they should have some sort of acknowledgement from us within 15 minutes.  What should we write back?  How about this?
+> "Hi. For some reason when I logged on this morning, only half of my client options showed up when I was in (application). This is no good because I have a deadline to input updated transaction details into their profiles by tomorrow afternoon. I need help ASAP please."
 
-"Hi John.  This is Rob from the (company) support team.  I wanted to let you know that I've received your issue and I will be contacting you in the next hour so that we can take a look at your issue together. Can you confirm that your phone number is still (number)?"
+John has already received the automated acknowledgement but he hasn't heard from a person yet. Ideally he should have a personal response within 15 minutes. Here is what that might look like.
 
-What have we done here?  We've let the customer know that there is a human being that is aware of their issue and we've given the customer an expectation of when they will hear from us and HOW they will hear from us.  Rarely will you hear a customer argue about the form of communication you're using with them such as phone, when they know they have a deadline they are up against.  Email back and forth is fine when providing a customer an article link or an answer to a simple question.  You can also use it if you have something you want the customer to try pertaining to this issue that is easy enough for them to follow as a first step.  If it doesn't work, email back and forth with more and more "try this" can get on an end users nerves.  Ideally your organization shouldn't be JUST using email when issues need be resolved in a timely fashion.
+> "Hi John. This is Rob from the (company) support team. I wanted to let you know that I've received your issue and I will be contacting you within the next hour so we can take a look at it together. Can you confirm that your phone number is still (number)?"
 
-Internal Notes to put in: "Emailed reply to John letting him know we're aware of the issue.  Will call him in less than one hour but also pending his reply on if phone number is up to date.  NEXT STEP: Call John within the hour."
+What did we accomplish here? We let John know that a real person is aware of his issue, we gave him a clear expectation of when he will hear from us, and we told him how we plan to reach him. Rarely will a customer push back on the communication method when they know they are up against a deadline.
 
-**Phone**
+Email back and forth works well for sending an article link, answering a simple question, or giving the customer an easy first step to try. It starts to work against you when every reply is another "try this" and the issue still isn't resolved. Customers lose patience with that quickly. If an issue needs to be solved in a timely fashion, email alone is not going to be your best tool.
 
-Customers still use this and especially when an issue is urgent.  We all know what an urgent issue is.  Something where the solution is not useable and is a significant business impact to the customer. It could also be that you have a client that is used to using the phone to call in any issue.  The nice thing about phone calls is that the acknowledgement is immediate.  So when they call, a ticket is opened.  Yes, they will get some sort of email making them aware the ticket is open but they've already been talking to you.  When you get off the phone with the customer you want to recap in an email what you discussed even though you just recapped verbally.  This is just double the assurance that you truly understand the gist of their issue.  Check this out.
+**Internal Note:**
+> "Emailed reply to John letting him know we're aware of the issue. Will call him in less than one hour but also pending his reply to confirm phone number is up to date. NEXT STEP: Call John within the hour."
 
-"Hi Debbie.  Thank you so much for giving us a call today.  To recap what we discussed, you're wanting to know when the new training session for (application) will be released by our training department.  I am going to check in with our training head to see when that training might be available.  You mentioned that it would be okay to reply via email with an update."
+---
 
-What does this do?  It makes the customer feel like they're heard.  There will be other documentation in this portfolio about "fixing the customer" but it should be noted that in communicating with the customer in follow up, you've already started towards fixing the customer while fixing the issue.  We're support agents.  We can multitask.
+## Phone
 
-Internal Notes to put in: "Customer called in to ask about training.  Re assured Debbie that I would look into when the training for (application) would be available and get back to her via email. NEXT STEP: Engage with training on when training for (application) will be available and accessible to customer."
+Customers still call in and they especially do when the issue is urgent. An urgent issue is one where the product is not usable and the business impact is significant. It could also simply be that your customer prefers the phone regardless of urgency. The advantage of a phone call is that the acknowledgement is immediate. There is no waiting. A ticket opens while they are already talking to you.
 
+After the call, send a recap email even though you just did that verbally on the phone. It is not redundant. It is a written confirmation that you understood the issue correctly and it gives the customer something to reference. Here is what that might look like.
 
-**Chat**
+> "Hi Debbie. Thank you so much for giving us a call today. To recap what we discussed, you're wanting to know when the new training session for (application) will be released by our training department. I am going to check in with our training head to see when that might be available. You mentioned that it would be okay for me to follow up by email with an update."
 
-There is nothing better as an end user than having a support agent at your fingertips.  Modern day AI's are built into chat agents to gather information on the customer issue and then transfer an available agent.  An application like Zendesk will record the entire conversation after the chat is wrapped up.  Customers can easily spot the difference between a bot and a human and so they do know when they're talking to an automation version talking to YOU, the support specialist.  Chatting with a customer really isn't all that different than talking with them on the phone.  The only difference is that you are using a keyboard and not a headset.  Chats can be a bit like emails in that the customer will ask a question and when the question hits you, the ball is in your court to respond.  Here is an example of a chat conversation.
+That email does something important. It makes Debbie feel heard. There will be other documentation in this portfolio about fixing the customer but it is worth noting here that the follow up recap email is already part of that process. You are fixing the customer while you are still working on the issue. Support agents can multitask.
 
-"Hi. This is Jackie from (company). I forgot how to extract yesterdays numbers from (application) and I could really use some guidance."
-(Agent "Name Displayed") "Hi Jackie. Thank you for contacting (company) support.  I'm happy to assist you with this.  I am going to send you the link to one of our help articles regarding this subject.  It is a step by step guide on how to run an extraction.  Please click here (link) to view it.  If you have any questions please be rest assured that I am here to help you further if needed.  This chat is open ended so if you have any questions please feel free to ask and I will be happy to help!!"
+**Internal Note:**
+> "Customer called in to ask about training. Reassured Debbie that I would look into when training for (application) would be available and get back to her via email. NEXT STEP: Engage with training on timeline and relay back to customer."
 
-In this case the customer needed a how to and we were able to drop a link in while assuring the customer that we were here for them if they needed any additional help.  Generally you don't want to linger too long in a chat.  Like email, it can become back and forth when the customer needs more than just an interaction of keyboards.  Offer to call them.  Chats can be good for short Q and A or for sending article links or some quick steps.  They aren't meant to be long conversations.  Shifting to the most helpful line of communication can keep the customer coolheaded and confident in you and your organizations ability to properly support the product they pay to use.
+---
 
-Internal Notes to put in: "Chatted with Jackie and sent her a step by step KB on how to extract previous days numbers from (application).  Let her know that I was available to help further if needed. She didn't reply further. Followed up with an email to thank for for reaching out and to contact us if she has any questions.  NEXT STEP: Pending reply.  Check back in two days to see if Jackie can be helped further.  If no reply, close ticket within 24 hours of follow up."
+## Chat
 
-**Video**
+There is nothing better for an end user than having a support agent available at their fingertips. Modern chat tools often use AI to gather initial information before connecting the customer to a live agent. Zendesk will record the full chat conversation once it is wrapped up. Customers can tell the difference between a bot and a human and they know the moment they are talking to you directly.
 
-Though I personally have never supported a customer over video, it doesn't mean that it's never happened.  It probably happens now more these days than ever before as support becomes more modernized.  I have been in plenty of video conversations though and I think that the same etiquette we use in professionalism with our colleagues should be used with our customers.  See below:
+Chatting with a customer is not fundamentally different from a phone call. The only difference is a keyboard instead of a headset. Here is an example of how a chat interaction might go.
 
-  - Camera On: The customer needs to SEE YOUR FACE.  If you are not presentable, consider handing the communication off to someone who is.
-  - Background: If you don't have much behind you, you're fine.  If you do, blur it out.  You're a professional in the moment you're helping a customer.
-  - People: Whether you're in the office or working remotely from home, it is imperative that you are not disturbed.  If in the office, it's a no brainer because it's policy not to disturb a fellow co worker when engaging with a customer.  If at home, your spouse can wait to ask you if you'll take the dog out for a poop until after you're done working with the customer.  You can also lock your door if they don't get the hint.
-  - Attire: The customer doesn't want to see messy hair or a hoody.  Fix your hair and put on a decent shirt. 
+> **Jackie (Customer):** "Hi. This is Jackie from (company). I forgot how to extract yesterday's numbers from (application) and I could really use some guidance."
+>
+> **Agent:** "Hi Jackie. Thank you for contacting (company) support. I'm happy to help with this. I'm going to send you a link to one of our help articles on this subject. It's a step by step guide on how to run an extraction. Please click here (link) to view it. I'm still here if you have any questions at all — this chat is open so feel free to ask."
 
-  Internal Notes to put in would be the same as what you would use if chatting, or talking on the phone.  If you didn't follow any of the above rules, the customer may have something to say about it and rightfully so.
+Jackie needed a how to and we were able to get her an article link while making it clear we were still present if she needed more. That is the sweet spot for chat.
 
-  The most important thing to remember is that communication is always needed. Transparency is always needed.  Accountability to your customer is always needed.  Accountability to your co workers is always needed.  Good communication isn't just good for your interaction with a customer. It's also good for anyone else from your organization who may have to engage them.  YOU set the tone.
+What chat is not good for is a long drawn out back and forth. Like email, it can become exhausting for a customer when the problem is more complex than a quick answer can solve. If the conversation starts going in circles offer to call them. Chat is best suited for short questions, article links, and quick steps. Knowing when to shift to a more effective communication channel is itself a skill and it keeps the customer confident in your ability to support them.
+
+**Internal Note:**
+> "Chatted with Jackie and sent her a step by step KB article on how to extract previous day's numbers from (application). Let her know I was available if she needed anything further. She didn't reply. Followed up with an email thanking her for reaching out and letting her know we're here if she needs us. NEXT STEP: Pending reply. Check back in two days. If no reply, close ticket within 24 hours of follow up."
+
+---
+
+## Video
+
+I have not personally supported a customer over video but that does not mean it isn't happening. It is probably more common now than ever as support continues to modernize. I have been in plenty of video calls with colleagues and I believe the same professional standards we hold ourselves to internally should apply when a customer is on the other end of the camera.
+
+- **Camera On:** The customer needs to see your face. If you are not presentable, consider handing the call off to someone who is.
+- **Background:** A clean or simple background is fine. If yours is not, blur it. You are a professional in the moment you are helping a customer.
+- **Interruptions:** Whether you are in the office or working from home it is essential that you are not disturbed. In the office that is generally understood as policy. At home your family can wait until you are off the call. Lock the door if needed.
+- **Attire:** Fix your hair and put on a decent shirt. The customer is not expecting a suit but they are expecting a professional.
+
+Internal notes for a video call follow the same format as phone or chat. If you did not follow the guidelines above the customer may have something to say about it and they would be right to.
+
+---
+
+## The Bottom Line
+
+Communication is always needed. Transparency is always needed. Accountability to your customer is always needed and accountability to your colleagues is always needed. Good communication does not just benefit your interaction with the customer in the moment. It benefits every person in your organization who may ever have to engage that customer after you. You set the tone. Make it a good one.
+
+---
+
+*Robert de Mattos | robertdemattos@yahoo.com | linkedin.com/in/robert-de-mattos-16b8ab5*
