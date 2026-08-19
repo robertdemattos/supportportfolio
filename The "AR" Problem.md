@@ -1,27 +1,62 @@
-**The AR Issue**
+# The AR Statement Issue
 
-**Situation**
+---
 
-A hospital accounts receivable employee for pharmacy billing is unable to print the 8000 plus statements that he knows doesn't have a zero balance and he needs it because it's the end of the month and statements need to go out so that patients can pay their bills to the hospital in a timely fashion.  So far he only sees 600 printable statements.  This isn't right.
+## Situation
 
-**Task** 
+A hospital accounts receivable employee responsible for pharmacy billing contacted support unable to print the 8,000+ patient statements he knew had outstanding balances. It was end of month. Statements needed to go out so patients could pay their bills on time. Instead of the 8,000+ statements he expected, only around 600 were showing as printable. Something was wrong and the clock was ticking.
 
-It is my job to investigate why he isn't pulling up the 8000 plus statements he needs.  This tells me that maybe I need to investigate the database and the application function itself to start.
+---
 
-**Action**
+## Task
 
-1. The first thing I did was to make sure that Hangfire (a cloud based application that replaces Windows Scheduler on a server) triggered the AR batch preparation.  Upon looking at the application log, the action triggered 15 minutes after the customer clicked on the action to print the statements (this is normal as the trigger is set for 15 minutes).
-2. I then looked at the customer database to make sure that all of the accounts were listed.  I ran a SQL query:  select * from tbltgarstatements where accountbalance > 0
-3. The accounts pulled up and there were more than 8000 so I knew that the accounts with balances were showing correctly.
-4. To make sure the application was working okay I got into the customer environment (set up so their IT doesn't have to get us in) and triggered an AR statement reversal to the previous month (this is an undo on the batch run as if only the previous month was run).  Then I triggered the AR print statement action same as the customer did.  Only 600 or so statements prepped in the batch which is what the customer had reported (I recreated to make sure that the process was being followed AND to see it for myself).
-5. I then dropped all of my research data into Zendesk including screenshots.  As the Team Lead and Level 3 it was my job to consult Engineering.  Since the process of running AR was being done correctly, it was time to speak with our engineering team.  I placed an Azure board ticket with them, updated the customer on the investigation and presented my findings at the engineering meeting the next day.  The first thing I was asked was what the version of the web application was that was being used by the customer.  I gave it to them.  They looked through and found out that just prior to the customer reporting this issue to us, the application was updated to a new patched version that fixed various issues including some AR problems.  The question arose about the stored procedure in SQL and if it had been updated with the patch.  While it was normal for a stored procedure to be altered with a patch, this particular one had slipped through the cracks and the stored procedure was for the previous version.  Engineering put me with our database expert and the person who writes stored procedures for every new version of the web application.
-6. I worked with the customer to make sure that they were aware that our DBA, who had no access, would need to access SQL to look at the stored procedure so he could compare to the patch notes what needed to be altered to fix the issue.
-7. The customer agreed that I could use my access to get the DBA into the database.  From there and with coordinated access, the DBA pulled the stored procedure, dropped it into a test environment and began to tweak it to work with the newest version of software.  Once he tested, I gave him access and he dropped in the stored procedure.  We triggered the AR run.  2000 statements.  An improvement to say the least but we still weren't there yet.  I made sure to keep the customer updated.
-8. The DBA went back again and tweaked it more, got back into the environment, dropped the new stored procedure, reversed the batch and re ran it.  5000 statements.  Close but no cigar.
-9. Then the DBA told me he needed a couple of days and to be able to work with the end user directly.  I asked him if he needed me there as an intermediary or if he felt confident talking to the customer directly (since he normally didn't interact with the customers) and he said he did.
-10. A couple days passed and he made his final fix to the stored procedure but he wanted me to be there when the end user tested.
+My job was to find out why the application was only surfacing 600 statements when the data clearly showed far more accounts with balances. That meant starting at two places simultaneously — the database and the application itself — to understand where the disconnect was happening.
 
-**Result**
+---
 
-Because the customer was communicate with by myself and the DBA, he was okay running statements nearly a week after they were due.  Myself and the DBA were there when he ran the statements.  8000+!!!  We also checked to make sure that the statements (in pdf) looked okay and there were no issues.  This end user was part of a large hospital organization.  In hospitals, AR issues are a headache and can delay timely billing for patients which puts a strain on relationships with patients from the hospital end.  Luckily this customer communicated well with his patients as well as we did with him throughout the process.  He thanked us for our efforts.  I left the ticket in a hold state for another few weeks until his end of month process came up again.  I checked in with him after his run and they all batched up at the correct amount.  Having his satisfaction noted, I then closed the ticket and then worked with the head of engineering to make sure that prior to any future version release where a module was affected and subsequently the stored procedure, was properly tested.  I then created a document to make sure that with AR issues or any issue related to the web application, we made sure that we recorded what version of software it was.  Ultimately, discovering that the stored procedure hadn't been altered, saved other customers from the same fate and their upgrades were delayed until the stored procedure could be made part of the patch that the first customer received.
+## Action
+
+1. The first thing I checked was whether Hangfire, the cloud based application that replaced Windows Scheduler for batch processing, had properly triggered the AR batch preparation. I pulled the application log and confirmed it had fired approximately 15 minutes after the customer initiated the print action, which was normal behavior based on how the trigger was configured.
+
+2. Next I went directly into the customer database and ran a SQL query to verify the accounts were actually there.
+
+   ```sql
+   SELECT * FROM tbltgarstatements WHERE accountbalance > 0
+   ```
+
+   More than 8,000 accounts pulled back. The data was in the database and it was correct. The problem was not missing data.
+
+3. To make sure I was seeing what the customer was seeing and that the process was being followed correctly, I accessed the customer environment through our established access point and triggered an AR statement reversal to the previous month — essentially an undo on the batch run. I then triggered the AR print statement action the same way the customer had. Only around 600 statements prepped in the batch. I had recreated the issue and confirmed it was real.
+
+4. I documented everything in Zendesk — my steps, findings, and screenshots — and brought it to engineering. As Team Lead and the Level 3 resource on the case it was my responsibility to bridge the support and engineering teams. I opened an Azure Boards ticket, updated the customer on where the investigation stood, and presented my findings at the engineering meeting the following day.
+
+   The first question engineering asked was what version of the web application the customer was running. I had it. As they reviewed the version history they found that just prior to the customer reporting the issue the application had been updated to a new patched version that addressed several AR related problems. The question then became whether the SQL stored procedure had been updated alongside the patch. It had not. The stored procedure in the customer's environment was still written for the previous version. It had slipped through during the release process. Engineering connected me with the DBA responsible for writing and maintaining stored procedures for each application version.
+
+5. I worked with the customer to explain that our DBA, who had no direct database access, would need to get in to examine the stored procedure and compare it against the patch notes to understand what needed to change. The customer agreed and authorized me to facilitate access through my own credentials.
+
+6. With coordinated access established the DBA pulled the stored procedure, brought it into a test environment, and began working through what the newest version of the application required. Once he was satisfied with his test results I gave him access and he deployed the updated stored procedure. We triggered the AR run. 2,000 statements. A meaningful improvement but still well short of the mark. I kept the customer informed throughout.
+
+7. The DBA went back in, made further adjustments, redeployed, reversed the batch, and ran it again. 5,000 statements. Closer, but not there yet.
+
+8. At that point the DBA told me he needed a couple of days and wanted to work more directly with the end user to understand exactly what the output needed to look like. I asked him whether he wanted me present as an intermediary or whether he felt comfortable engaging the customer directly since he didn't typically work customer facing. He said he was comfortable going directly and I trusted his judgment.
+
+9. A couple of days later he had made his final adjustments but asked me to be present when the end user ran the test. I was there.
+
+---
+
+## Result
+
+Because the customer had been communicated with consistently throughout — first by me and then jointly with the DBA — he was willing to run his statements nearly a week past their original due date. When we ran them together, 8,000+ statements batched correctly. We also verified the PDFs to make sure the output looked right. Everything was clean.
+
+This customer was part of a large hospital organization. AR delays in a hospital environment are not just an inconvenience. They affect the timing of patient billing, which puts a strain on the relationship between the hospital and the people it serves. This customer had done a good job communicating with his patients about the delay and he thanked us for our efforts and transparency throughout the process.
+
+I left the ticket in a hold state for several weeks until his next end of month cycle came around. I checked in with him after that run and all statements batched at the correct count. With his confirmation that everything was working as expected I closed the ticket.
+
+I then took the issue upstream. I worked with the head of engineering to establish that prior to any future version release where a module was affected — and by extension its stored procedure — proper testing had to be part of the release process. I also created internal documentation requiring that any AR issue or web application related issue include the software version in the ticket from the start.
+
+The most significant outcome was that discovering the stored procedure had not been updated with the patch allowed us to identify other customers on the same version before they experienced the same problem. Their upgrades were delayed until the corrected stored procedure could be formally included in the patch, protecting them from the same month end disruption.
+
+---
+
+*Robert de Mattos | robertdemattos@yahoo.com | linkedin.com/in/robert-de-mattos-16b8ab5*
 
