@@ -1,25 +1,51 @@
-**The Cash Acceptor Issue**
+# The Cash Acceptor Issue
 
-**Situation**
+---
 
-Back when I worked on ATM machines (which I worked on for a decade) we had a brand new machine in a newly remodeled downtown branch that would stop accepting cash deposits.  Other techs had been out and had replaced the entire cash acceptor but the issue kept re occurring.  The customer was growing frustrated because this was the "show off" branch.  A flag ship of others to come.  First techs were just checking it for jams and rebooting the ATM PC.  Then they were replacing parts.  Nothing fixed the issue.
+## Situation
 
-**Task**
+During my decade working on ATM machines, I encountered a recurring issue at a brand new ATM installed in a newly remodeled downtown branch — the flagship location for a series of branches to follow. The machine would intermittently stop accepting cash deposits. Multiple technicians had already been dispatched. The first wave checked for jams and rebooted the ATM PC. When that didn't work, the next wave began replacing parts including the entire cash acceptor unit. None of it resolved the issue. The customer was growing frustrated. This was their showpiece branch and it wasn't performing.
 
-I was considered one of the better techs in the area at the time and they asked me to have a look at it.  So the plan was to speak with all of the techs who worked on it about what they saw and also try to glean if there was a particular time this was occurring.  I also wanted to make sure that USB connections, hubs and control boards had also been checked.
+---
 
-**Action**
+## Task
 
-1. I spoke with the techs who worked on it and they were all flustered and flabbergasted by this machines behavior but they did give me a good point of reference.  The machine would stop accepting cash after 7 pm when it did break.
-2. I found that odd but one thing that did spring up in my head was the ATM servicer.  The ATM servicer is generally there to load the machine with money, pull money accepted by the cash acceptor and also put a new role of receipt paper in if it is getting low.  I had the number of the coordinator for the armored service and asked him to tell me how often our problem machine got serviced.  It was at 7 pm and it matched up perfectly with the days the machine broke.  But...I wasn't ready to blame the ATM servicer.  I had to go take a look for myself.
-3. I got down to the machine on the next report of the cash acceptor being offline and I noticed in the computer that the PC couldn't see it.  The device was USB run.  The USB external hub showed every device lit except for one.  So I knew that the device was losing communication with the PC....but WHY???.
-4. Something to note before I continue.  Cash acceptors and cash dispensers have to be racked out to be serviced or replaced therefore the electrical and communication cabling harness has to be routed through a flex chain designed to keep everything in one place.  I went ahead and restarted the computer and the cash acceptor came back up.
-5. Because I knew the servicer had to rack the unit in and out, I decided to test it.  I racked it out, ran it, racked it in, tried to run it but it had gone offline again.  So I knew what I had to look at. Something is wrong in the harness somewhere.
-6. I racked the cash acceptor in and out observing the harness and what I noticed was that the harness was hitting the safe wall.  It's not insulated.  It's made of metal. Upon racking out the acceptor again I began to pull out just the USB cable from the harness.  That is when I found it.  Right at the part of where the chain stopped folding, was an exposed piece of wiring in the USB cable.  I knew what I had to do.
-7. I ordered a new USB cable but I also ordered a new chain for the harness.  Generally when these came off the build floor, the harnesses were an assembly to include the communication cable and electrical already in the chain.  I wanted to put my own touch on putting the wiring back in the chain.  So I replaced the USB cable after removing the chain and letting the harness hang.
-8. I then took my time and put the harness back in the chain very carefully making sure to put the USB cable into the center of the wiring harness as to be protected by the electrical wiring and the chain around it.
-9. I then checked to make sure that the chain wasn't touching the safe wall.  Because I had done it by hand, the chain had the clearance it needed now.
+I was considered one of the stronger techs in the area at the time and was asked to take a fresh look. My approach was to start by talking to every tech who had worked on the machine to understand what they had seen and tried. I also wanted to find out whether there was a pattern — a specific time of day or circumstance when the failure occurred. Beyond that I wanted to confirm whether USB connections, hubs, and control boards had been thoroughly inspected, since prior work had focused heavily on the cash acceptor hardware itself.
 
-**Result**
+---
 
-I rebooted the ATM and got the acceptor back right away. I then tested the acceptor racked in and out several times for a good forty minutes.  I also ran already processed cash through the unit.  Everything I did worked and then acceptor never quit.  I then informed the customer and the issue never returned.  The root of the issue was the short being triggered unknowingly by the servicer.  This wasn't their fault though.  They were operating the machine as they had been trained and the issue was created at or before installation of the ATM.  I wrote up a small document (field techs had limited resources) to do thorough checks on device harnesses and even replace harness chains that were broken at any point.  
+## Action
+
+1. I spoke with each of the techs who had worked on the machine. They were all genuinely stumped by its behavior, but they gave me one useful data point — when the machine did fail, it always happened after 7 pm.
+
+2. That timing immediately made me think of the ATM servicer. The armored service team is responsible for loading the machine with cash, retrieving deposited funds from the cash acceptor, and replacing the receipt paper roll when it runs low. I contacted the coordinator for the armored service and asked how often our problem machine was being serviced. The answer was 7 pm — matching perfectly with the days the machine failed. But I wasn't ready to point the finger at the servicer. I needed to see it for myself.
+
+3. On the next report of the cash acceptor going offline I went to the machine and pulled up the computer. The PC couldn't see the device at all. The cash acceptor was USB connected and when I checked the external USB hub every device showed as lit except for that one. The device was losing communication with the PC. The question was why.
+
+4. Before going further it's important to understand how these machines are built. Cash acceptors and cash dispensers have to be racked out on a sliding mechanism to be serviced or replaced. Because of this the electrical and communication cabling runs through a flex chain — a protective assembly designed to keep the wiring organized and intact as the unit slides in and out. I restarted the computer and the cash acceptor came back online, which told me the connection wasn't permanently broken. Something was interrupting it.
+
+5. Knowing that the servicer had to rack the unit in and out during every visit I decided to replicate that process. I racked the cash acceptor out, ran it, racked it back in, and tried to run it again. It went offline immediately. That told me exactly where to look. Something in the harness was the problem.
+
+6. I racked the unit in and out slowly this time, watching the harness carefully. That's when I noticed it — the harness was making contact with the safe wall. The safe wall is not insulated. It's bare metal. I racked the acceptor out again and began carefully separating the USB cable from the rest of the harness. Right at the point where the flex chain stopped folding, I found it — an exposed section of wiring on the USB cable. Every time the servicer racked the unit in and out, that exposed wire was grounding against the metal wall and knocking the device offline. I knew exactly what needed to be done.
+
+7. I ordered a new USB cable and a new flex chain for the harness. Typically these units came off the build floor with the communication and electrical cabling already assembled inside the chain as a single unit. I wanted to do this one differently — by hand, with intention. I replaced the USB cable first, removing the chain entirely and letting the harness hang free so I could work cleanly.
+
+8. I then rebuilt the harness by hand, carefully routing the new USB cable through the center of the wiring bundle so it would be surrounded and protected by the electrical wiring on all sides, with the chain enclosing everything around it.
+
+9. Once reassembled I verified that the chain had proper clearance from the safe wall. Because I had done it by hand rather than relying on the original factory assembly, I was able to position it with the clearance it needed.
+
+---
+
+## Result
+
+I rebooted the ATM and the cash acceptor came back online immediately. I then racked the unit in and out repeatedly for about forty minutes, running already processed cash through it each time to stress test the repair under real conditions. Everything held. The acceptor never dropped.
+
+I informed the customer and the issue never returned.
+
+The root cause was a short circuit created by an exposed USB cable making contact with the uninsulated metal safe wall every time the unit was racked in and out during servicing. This was not the servicer's fault. They were operating the machine exactly as they had been trained. The fault lay in how the harness had been assembled at or before installation — with insufficient clearance from the safe wall and no protection around the USB cable itself.
+
+After resolving the issue I wrote up a brief document for field techs recommending thorough inspection of device harnesses on all units and replacement of any flex chains showing wear or damage. Field techs had limited documentation resources at the time, but this was worth putting on paper.
+
+---
+
+*Robert de Mattos | robertdemattos@yahoo.com | linkedin.com/in/robert-de-mattos-16b8ab5*
