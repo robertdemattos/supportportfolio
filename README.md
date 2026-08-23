@@ -8,12 +8,12 @@ Hello.  My name is Robert de Mattos and this is my support portfolio.  This will
 - Ticket Documentation
 - Technical Scenarios
 - Customer Scenarios
-- Escalation Tiers
+- Escalations
 - Support Team Leadership
 - "Fixing The Customer"
 - Wild Technical Stories
 - Knowledge Base Examples
-- AI Uses in Support
+- AI in Support
 
 ---
 
